@@ -1,0 +1,208 @@
+ https://github.com/ethereum-optimism/specs/blob/main/specs/experimental/custom-gas-token.md
+  - https://gov.optimism.io/t/enable-custom-gas-token-on-op-stack/7834
+  - https://github.com/ethereum-optimism/specs/issues/67
+  - [x] TODO(Qiang): Governance voting? Vote on mainnet and ERC20? Snapshot? => Snapshot on mainnet ERC20
+  - [x] TODO(Alan): Study Metis or StarkWare price model
+- Token Upgrade: TODO(Qiang)
+  1. Freeze old ERC20 (QKC), take a snapshot, and claim a new token by snapshot
+
+
+oceanprotocol/jobs · ux.md
+Markdown
+·
+main
+…tools make it easy to publish & consume data services as ERC20 datatokens, and bridge data to DeFi. Ocean Market is a …
+
+
+Rari-Capital/rari-yield-pool-contracts · API.md
+Markdown
+·
+master
+…Token Standard](https://eips.ethereum.org/EIPS/eip-20) for reference on all common functions of ERC20 tokens like RYPT.
+### `RariFundProxy.exchangeAndDeposit(address inputErc20Contract, uint256 inputAmount, string outputCurrencyCode, LibOr…
+    * `inputErc20Contract` (address): The ERC20 contract address of the token to be exchanged. Set to address(0) to inp…
+…nputCurrencyCodes, uint256[] inputAmounts, address outputErc20Contract, LibOrder.Order[][] orders, bytes[][] signature…
+    * `outputErc20Contract` (address): The ERC20 contract address of the token to be outputted by the exchange. Set to …
+…rg/EIPS/eip-20) for reference on all common functions of ERC20 tokens like RYPT. Here are a few of the most common one…
+* As with the `approve` functions of other ERC20 contracts, beware that changing an allowance with this method brings t…
+
+
+xdworks/startup-school-2018 · 10.md
+Markdown
+·
+master
+And the one you'll hear  tossed around a lot is an ERC20 token.
+
+
+ramyrams/Blockchain · dd.md
+Markdown
+·
+master
+https://crushcrypto.com/
+https://cryptobriefing.com/quantstamp-ico-review-and-token-analysis/#1507666904032-fca03ddf-4ab4
+https://www.investitin.com/quantstamp-review/
+https://eidoo.io/erc20-tokens-list/
+https://coinmarketcap.com/currencies/0x/#markets
+
+
+Swivel-Finance/ubiquitous-language · V2.md
+Markdown
+·
+main
+An `Erc20` compatible token deployed at a given Ethereum Address. May also be referenced as _Erc20_ or _uToken_.
+* **Underlying** - `address` Ethereum address of a deployed Erc20 token
+A CErc20 at an address passed to the constructor of the Swivel contract at deployment.
+Pass an array of underlying token addresses + array of CERC20 addresses to create a public mapping of address -> addres…
+### CToken is Erc20
+Note that all functionality of the Erc20 standard is available to the Compound Token. Use _CErc20_ or _cToken_ to speci…
+### Erc20
+Erc20 is a token contract standard on the Ethereum Virtual Machine (EVM) that defines mechanics and best practices for …
+Show 2 more matches
+
+
+johnkozan/housing-dao · h.txt
+Text
+·
+master
+// File: openzeppelin-solidity/contracts/token/ERC20/ERC20.sol
+        _balances10000 tokens
+[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
+        _balances[recipient] = _balances[recipient].add(amount);
+Show 65 more matches
+
+
+Fantom-foundation/fantom-documentation · vm.md
+Markdown
+·
+master
+Contract Life Cycle
+-------------------
+User *a* creates ERC20 smart contract *sc*
+def transfer(to,val):
+
+
+bguiz/whalechat-app · DAO.md
+Markdown
+·
+master
+Note that `WHALE` tokens are ERC20-compliant and therefore can be bought and sold as any other ERC20 token. The same ap…
+
+
+sambacha/sushi-api-wrapper · docs/v2.md
+Markdown
+·
+master
+  "0x..._0x...": {                  // the asset ids of the ERC20 tokens (i.e. token addresses), joined by an underscore
+  "0x...": {              // the address of the ERC20 token
+    "name": "...",        // not necesssarily included for ERC20 tokens
+    "symbol": "...",      // not necesssarily included for ERC20 tokens
+    "id": "0x...",        // the address of the ERC20 token
+  "0x..._0x...": {                    // the asset ids of ETH and ERC20 tokens, joined by an underscore
+- `pair`: The asset ids of two ERC20 tokens, joined by an underscore, e.g. `0x..._0x...`. The first token address is co…
+- `pair`: The asset ids of two ERC20 tokens, joined by an underscore, e.g. `0x..._0x...`. The first token address is co…
+
+
+sherlock-audit/2025-02-yieldoor-judging · 219.md
+Markdown
+·
+main
++       uint256 totalValueUSD = _calculateTokenValues(up.token0, up.token1, amountOut0, amountOut1, price);
++       uint256 borrowedValue = owedAmount * bPrice / ERC20(up.denomination).decimals();
++       
+Show 2 more matches
+
+
+X-N-X-I-X-R/ethereum_fake_blockchain_env_hardhat · t.txt
+Text
+·
+main
+-דוגמה לשימוש:
+  
+  import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+  contract MyToken is ERC20 {
+      constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+
+
+sxiii/airdrop-manuals · nkr.md
+Markdown
+·
+master
+3. Fill-in: 
+*Name, 
+*Email, 
+*ERC20 wallet (for example, your MyEtherWallet address). 
+4. Press "Sign Me Up!" button. Now, you're presented with the vyper bonus panel. 
+5. Here's what you can do: 
+* follow the NKOR project in: 
+
+
+suterusu-team/suterusu-protocol-public · DOC.md
+Markdown
+·
+master
+…t with the contracts. Suterusu supports both ETH and any ERC20 token. On the high level, Suterusu can be viewed as an …
+var suter_erc20_abi = JSON.parse(fs.readFileSync("./build/contracts/SuterERC20.json")).abi;
+var sdk = new SuterSdk(web3, account, suterusu_contract, suter_native_abi, suter_erc20_abi);
+var suter_erc20_abi = $.getJSON("SuterERC20.json").abi;
+var sdk = new SuterSdk(web3, account, suterusu_contract, suter_native_abi, suter_erc20_abi);
+| suter_erc20_abi | Object            | The json interface of `SuterERC20` (the contract for dealing with any ERC20 tok…
+| symbol                 | String | A unique symbol for the ERC20 token to be added (e.g., "USDT") |
+| token_contract_address | String | The contract address of the ERC20 token                        |
+Show 2 more matches
+
+
+dapphub/dai-semantics · dai.md
+Markdown
+·
+master
+We start by defining a module called `ERC20`:
+functions. See the discussion at [erc20.md](https://github.com/runtimeverification/erc20-semantics/blob/master/erc20.md…
+We first show the entire ERC20 configuration and then we discuss it:
+ERC20-K specification.
+
+
+Foxlottery/whitepaper-gittbook · ja.md
+Markdown
+·
+main
+宝くじの還元率や基準にするERC20トークン、宝くじのサイクルを設定して、すぐに宝くじを始めることができます。
+ユーザーから収集したERC20トークンをランダムな当せん者に分配します。
+|  決済手段  |  ERC20 トークン  | クレジットカード、口座振込 |
+取引所やDeFiでERC20トークンを入手する。
+
+
+Sotatek-Alan/script · a.txt
+Text
+·
+main
+                    <span id="ContentPlaceHolder1_erc20InfoLink">(ERC-20)</span>
+        <!-- Card Tabs: ERC20 Tokens -->
+        <div id="ContentPlaceHolder1_divERC20Tokens" class="card">
+…utton class="btn btn-sm btn-secondary" type="button" id="erc20TokenSearchButton" data-bs-toggle="dropdown" aria-expand…
+…earch-max-height dropdown-menu dropdown-menu-sm-end" aria-labelledby="erc20TokenSearchButton" style="min-width: 10rem">
+                            <input id="erc20TokenSearchInput" name="q" type="search" value="" class="form-control py-2"
+                <div id="ContentPlaceHolder1_tblErc20Tokens">
+…y metrics of <a href='https://info.sonicscan.org/what-is-erc20-token/' target='_blank' rel='nofollow noreferrer'>ERC-2…
+Show 4 more matches
+
+
+NoorahSmith/sherlock-audit-2023-01-optimism-judging · 023.md
+Markdown
+·
+main
+# ETH sent from L2 to L1 using withdraw/withdrawTo will be lost if ERC20 tokens are bridged
+… contains withdraw/withdrawTo functions that are payable. These functions can be used to bridge ETH/ERC20 tokens to L1.
+…ls the `L2StandardBridge` withdraw/withdrawTo functions with valid ERC20 token parameters AND an ETH value (msg.value).
+…user might do this by accidentally setting the amount of ERC20 as msg.value and parameter or by thinking the functions…
+        // Withdraw both ERC20 and ETH
+        require(msg.value == 0, "Value should not be passed to ERC20 withdrawals");
+        _initiateBridgeERC20(_l2Token, l1Token, _from, _to, _amount, _minGasLimit, _extraData);
+
+
+buildOMG/kb · kb.md
+Markdown
+·
+master
+## [Will initial OMG Network support all ERC20s?](https://kb.omgcommunity.org/kb#why-was-there-a-need-to-specifically-h…
+> We will trade as many ERC20 tokens as is optimal at our first implementation of the decentralized exchange. We contin…
+> Support for ERC20 tokens will first be added to the eWallet SDK. Support for ERC721 will be considered for a future r…
